@@ -11,6 +11,8 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import { BGImage } from "./styled-components"
+import bg from "../images/background.png"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,6 +27,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      {/* <BGImage src={bg} alt="     " /> */}
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
@@ -32,6 +35,7 @@ const Layout = ({ children }) => {
           maxWidth: 960,
           padding: `0px 1.0875rem 1.45rem`,
           paddingTop: 0,
+          backgroundColor: `rgba(255, 255, 255, 0)`,
         }}
       >
         <main>{children}</main>
