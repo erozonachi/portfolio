@@ -48,6 +48,16 @@ const Header = styled.header`
         text-align: center;
         color: rgba(255, 255, 255, 0.9);
         text-decoration: none;
+        margin: 0 20px;
+        &:first-of-type {
+          margin-left: 0;
+        }
+        &:last-of-type {
+          margin-right: 0;
+        }
+        &:hover {
+          color: rgba(255, 255, 255, 0.6);
+        }
         &:link {
           color: rgba(255, 255, 255, 0.9);
         }
