@@ -77,7 +77,7 @@ const Header = styled.header`
   }
   img {
     max-width: 500px;
-    width: 80px;
+    width: 80%;
     margin-top: 80px;
     background-color: rgba(255, 255, 255, 0);
     border-radius: 50%;
