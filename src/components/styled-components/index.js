@@ -1,3 +1,4 @@
 import BGImage from "./background-image"
+import HeaderContainer from "./header"
 
-export { BGImage }
+export { BGImage, HeaderContainer }
