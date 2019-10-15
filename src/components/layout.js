@@ -11,8 +11,6 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
-import { BGImage } from "./styled-components"
-import bg from "../images/background.png"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -27,9 +25,8 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      {/* <BGImage src={bg} alt="     " /> */}
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
+      {/* <div
         style={{
           margin: `0 auto`,
           maxWidth: 960,
@@ -44,7 +41,7 @@ const Layout = ({ children }) => {
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
-      </div>
+      </div> */}
     </>
   )
 }

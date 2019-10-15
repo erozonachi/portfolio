@@ -11,11 +11,11 @@ const Header = ({ siteTitle }) => (
         <span>{siteTitle}</span>
       </div>
       <div>
-        <a href="#">About</a>
-        <a href="#">Education</a>
-        <a href="#">Arsenal</a>
-        <a href="#">Experience</a>
-        <a href="#">Projects</a>
+        <a href="/#">About</a>
+        <a href="/#">Education</a>
+        <a href="/#">Arsenal</a>
+        <a href="/#">Experience</a>
+        <a href="/#">Projects</a>
       </div>
     </nav>
     <img src={avatar} alt="James, Eneh" />

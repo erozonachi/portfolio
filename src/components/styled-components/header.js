@@ -1,28 +1,31 @@
 import styled from "styled-components"
+import bg from "../../images/background.png"
 
 const Header = styled.header`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: 100%;
-  background-image: url("../../images/background.png");
+  margin: 0;
+  padding: 0;
+  background-image: url(${bg});
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  background-position: top;
 
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 90%;
     height: 60px;
-    margin: 50px 50px 0 50px;
+    margin: 20px 50px 0 50px;
+    background-color: rgba(255, 255, 255, 0);
 
     > div {
       display: flex;
       justify-content: flex-start;
       align-items: center;
+      background-color: rgba(255, 255, 255, 0);
       &:last-of-type {
         justify-content: flex-end;
       }
@@ -36,11 +39,12 @@ const Header = styled.header`
         align-items: center;
         text-align: center;
         color: rgba(255, 255, 255, 0.9);
+        background-color: rgba(255, 255, 255, 0);
       }
       > a {
         font-family: "Scada", sans-serif;
         font-style: normal;
-        font-weight: bold;
+        /* font-weight: bold; */
         font-size: 2.4rem;
         line-height: 3rem;
         display: flex;
@@ -48,6 +52,7 @@ const Header = styled.header`
         text-align: center;
         color: rgba(255, 255, 255, 0.9);
         text-decoration: none;
+        background-color: rgba(255, 255, 255, 0);
         margin: 0 20px;
         &:first-of-type {
           margin-left: 0;
@@ -56,7 +61,7 @@ const Header = styled.header`
           margin-right: 0;
         }
         &:hover {
-          color: rgba(255, 255, 255, 0.6);
+          color: rgba(127, 127, 127, 0.9);
         }
         &:link {
           color: rgba(255, 255, 255, 0.9);
@@ -72,7 +77,10 @@ const Header = styled.header`
   }
   img {
     max-width: 500px;
-    margin-top: 50px;
+    width: 80px;
+    margin-top: 80px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 50%;
   }
   h3 {
     height: 74px;
@@ -85,6 +93,7 @@ const Header = styled.header`
     align-items: center;
     text-align: center;
     margin: 10px 0 155px 0;
+    background-color: rgba(255, 255, 255, 0);
     background: -webkit-linear-gradient(
       rgba(255, 255, 255, 1),
       rgba(255, 255, 255, 0)
